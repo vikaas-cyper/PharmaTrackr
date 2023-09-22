@@ -23,7 +23,7 @@ class StateResource extends Resource
     {
         return $form
             ->schema([
-                //
+                Forms\Components\TextInput::make('state')->required(),
             ]);
     }
 
@@ -31,7 +31,7 @@ class StateResource extends Resource
     {
         return $table
             ->columns([
-                //
+                Tables\Columns\TextColumn::make('state'),
             ])
             ->filters([
                 //
